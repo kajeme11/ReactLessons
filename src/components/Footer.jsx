@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({listSize}) => {
 
     const today = new Date();
 
@@ -12,6 +12,7 @@ const Footer = () => {
   return (
     <footer style={footerStyle}>
         <p>Copyright &copy; {today.getFullYear()}</p>
+        <p>{listSize} {listSize !== 1 ? "items": "item"}</p>
     </footer>
   )
 }

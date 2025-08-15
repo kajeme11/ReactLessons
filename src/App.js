@@ -55,7 +55,7 @@ function App() {
       <Content2 items={items} 
                 handleCheck={handleCheck} 
                 handleDelete={handleDelete}/>
-      <Footer />
+      <Footer listSize={items.length}/>
     </div>
   );
 }
