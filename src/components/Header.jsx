@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({title = "Default Title"}) => {
 
   return (
     <header style={{
@@ -8,9 +8,13 @@ const Header = () => {
         color: '#fff',
     }
     }>
-        <h1>Grocrie List</h1>
+        <h1>{title}</h1>
     </header>
   )
 }
+
+// Header.defaultProps = {
+//     title: "Default Title"
+// }
 
 export default Header

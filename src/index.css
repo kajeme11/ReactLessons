@@ -40,9 +40,12 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: center;
+  /* Have content start at the top */
+  justify-content: flex-start;
+  /* justify-content: center; */
   align-items: center;
   overflow-y: auto;
+  margin-top: 1rem;
 }
 
 footer {
