@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Content2 from './components/Content2';
 import Footer from './components/Footer';
 import { useState } from 'react';
+import AddItem from './components/AddItem';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <AddItem />
       <Content2 items={items} 
                 handleCheck={handleCheck} 
                 handleDelete={handleDelete}/>
