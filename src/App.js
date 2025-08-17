@@ -5,16 +5,13 @@ import Footer from './components/Footer';
 import { useState } from 'react';
 import AddItem from './components/AddItem';
 import SearchItem from './components/SearchItem';
-import Challange1 from './components/Challange1';
 
 function App() {
 
     //pull from local storage
     const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppingList')));
-
     //search
     const [search, setSearch] = useState('');
-
     //   const [items, setItems] = useState([
     //     {
     //         id: 1,
@@ -83,7 +80,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Challange1 />
       <AddItem newItem={newItem}
                setNewItem={setNewItem}
                handleSubmit={handleSubmit}/>
